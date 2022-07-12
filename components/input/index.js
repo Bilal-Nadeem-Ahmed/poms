@@ -1,4 +1,5 @@
 import { useState } from "react";
+import TaskItem from "../TaskItem";
 const Input = () => {
   const [task, setTask] = useState([]);
   const handleKeyPress = (e) => {
@@ -18,7 +19,7 @@ const Input = () => {
       ></input>
 
       {task.map((t) => (
-        <p key={"project" + task.indexOf(t)}>{t}</p>
+        <TaskItem message={t} key={"project" + task.indexOf(t)} />
       ))}
     </>
   );
