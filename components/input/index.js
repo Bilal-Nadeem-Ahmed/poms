@@ -9,7 +9,6 @@ const Input = () => {
       setTask([...task, { desc: e.target.value, id: e.timeStamp }]);
       e.target.value = "";
     }
-    console.log(e);
   };
 
   const handleDelete = (id) => {
