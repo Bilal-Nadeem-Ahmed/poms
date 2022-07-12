@@ -1,8 +1,8 @@
-const TaskItem = ({ message }) => {
+const TaskItem = ({ message, remove }) => {
   return (
     <p>
-      {message} <i class="bi text-primary bi-pencil"></i>
-      <i class="bi text-danger bi-trash3"></i>
+      {message} <i className="bi text-primary bi-pencil"></i>
+      <i onClick={remove} className="bi text-danger bi-trash3"></i>
     </p>
   );
 };
